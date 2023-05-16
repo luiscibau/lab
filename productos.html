@@ -46,28 +46,62 @@
             </div>
             <i id="nextButton" class="fa-solid fa-angle-right"></i>
         </div>
+        <main>
+            <section class="productoEnVenta">
+              <h1>Productos</h1>
+              <div class="card">
+                <img src="./img/05.jpg" alt="img">
+                <div class="description">Descripción del producto 1</div>
+                <div class="price">$10.00</div>
+                <div class="buy-button">Comprar</div>
+              </div>
+              <div class="card">
+                <img src="./img/02.jpg" alt="img">
+                <div class="description">Descripción del producto 2</div>
+                <div class="price">$15.00</div>
+                <div class="buy-button">Comprar</div>
+              </div>
+              <!-- Repite la estructura de la tarjeta para cada producto -->
+            </section>
+        
+            <div class="cart">
+                <h2>Carrito de Compras</h2>
+                <ul id="cart-items">
+                  <!-- Los elementos del carrito se agregarán aquí dinámicamente -->
+                </ul>
+                <div id="cart-summary">
+                  <p>Total: $<span id="cart-total">0</span></p>
+                  <p>Cantidad de productos: <span id="cart-quantity">0</span></p>
+                </div>
+                <form id="checkout-form">
+                  <input type="email" id="email-input" placeholder="Ingrese su correo electrónico" required>
+                  <button type="submit">Finalizar Compra</button>
+                </form>
+              </div>
+          </main>
     </header>
+    <footer>
+        <p>© Derechos Reservados 2023 - Atencion al cliente 0800-555-4343</p>
+        <ul>
+            <li>
+                <i class='bx bxl-whatsapp' style='color:#fffafa'></i>
+            </li>
+            <li>
+                <i class='bx bxl-instagram' style='color:#fffafa'></i>
+            </li>
+            <li>
+                <i class='bx bxl-facebook-circle' style='color:#fffafa'></i>
+            </li>
+            <li>
+                <i class='bx bxl-twitter' style='color:#fffafa'></i>
+            </li>
+            <li>
+                <i class='bx bxl-youtube' style='color:#fffafa'></i>
+            </li>
+        </ul>
+    </footer>
 </body>
-<footer>
-    <p>© Derechos Reservados 2023 - Atencion al cliente 0800-555-4343</p>
-    <ul>
-        <li>
-            <i class='bx bxl-whatsapp' style='color:#fffafa'></i>
-        </li>
-        <li>
-            <i class='bx bxl-instagram' style='color:#fffafa'></i>
-        </li>
-        <li>
-            <i class='bx bxl-facebook-circle' style='color:#fffafa'></i>
-        </li>
-        <li>
-            <i class='bx bxl-twitter' style='color:#fffafa'></i>
-        </li>
-        <li>
-            <i class='bx bxl-youtube' style='color:#fffafa'></i>
-        </li>
-    </ul>
-</footer>
+
   <script src="./js/codoacodo.js"></script>
   <script>
     (function (d, w, c) {
