@@ -82,14 +82,14 @@ function updateCartSummary() {
   var quantity = cartItems.length;
 
   cartItems.forEach(function (item) {
-    var price = parseFloat(item.querySelector('.price').innerText.replace('$', ''));
+    var price = parseFloat(item.querySelector('.price').innerText.replace('$', ' '));
     total += price;
   });
 
   var cartTotal = document.getElementById('cart-total');
   var cartQuantity = document.getElementById('cart-quantity');
 
-  cartTotal.innerText = total.toFixed(2);
+  cartTotal.innerText = total.toFixed(3);
   cartQuantity.innerText = quantity;
 }
 
@@ -98,7 +98,7 @@ var buyButtons = document.querySelectorAll('.buy-button');
 buyButtons.forEach(function (button) {
   button.addEventListener('click', function () {
     var product = button.previousElementSibling.previousElementSibling.innerText;
-    var price = button.previousElementSibling.innerText.replace('$', '');
+    var price = button.previousElementSibling.innerText.replace('$', ' ');
     addToCart(product, price);
   });
 });

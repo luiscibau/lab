@@ -46,91 +46,63 @@
             </div>
             <i id="nextButton" class="fa-solid fa-angle-right"></i>
         </div>
+   
         <section class="productoEnVenta">
             <h1>Productos</h1>
             <div class="card">
               <img src="./img/05.jpg" alt="img">
               <div class="description">Descripción del producto 1</div>
-              <div class="price">$10.00</div>
+              <div class="price">$105.000</div>
               <div class="buy-button">Comprar</div>
             </div>
             <div class="card">
               <img src="./img/08.jpg" alt="img">
               <div class="description">Descripción del producto 2</div>
-              <div class="price">$15.00</div>
+              <div class="price">$110.000</div>
               <div class="buy-button">Comprar</div>
             </div>
             <div class="card">
                 <img src="./img/06.jpg" alt="img">
                 <div class="description">Descripción del producto 1</div>
-                <div class="price">$10.00</div>
+                <div class="price">$77.000</div>
                 <div class="buy-button">Comprar</div>
             </div>
             <div class="card">
                 <img src="./img/09.jpg" alt="img">
                 <div class="description">Descripción del producto 1</div>
-                <div class="price">$10.00</div>
+                <div class="price">$17.870</div>
                 <div class="buy-button">Comprar</div>
             </div>
             <div class="card">
                 <img src="./img/03.jpg" alt="img">
                 <div class="description">Descripción del producto 1</div>
-                <div class="price">$10.00</div>
+                <div class="price">$10.985</div>
                 <div class="buy-button">Comprar</div>
             </div>
+            <div class="cart-container">
+                <div class="cart">
+                <h2>Carrito de Compras</h2>
+                <ul id="cart-items"> 
+                  <!-- Los elementos del carrito se agregarán aquí dinámicamente -->
+                </ul>
+                </div>
+                <div id="cart-summary">
+                  <p>Total: $<span id="cart-total">0</span></p>
+                  <p>Cantidad de productos: <span id="cart-quantity">0</span></p>
+                </div>
+                <form id="checkout-form">
+                  <input type="email" id="email-input" placeholder="Ingrese su correo electrónico" required>
+                  <button type="submit">Finalizar Compra</button>
+                </form>
+            </div>
         </section>
-        <div class="cart-container">
-            <div class="cart">
-            <h2>Carrito de Compras</h2>
-            <ul id="cart-items"> 
-              <!-- Los elementos del carrito se agregarán aquí dinámicamente -->
-            </ul>
-            </div>
-            <div id="cart-summary">
-              <p>Total: $<span id="cart-total">0</span></p>
-              <p>Cantidad de productos: <span id="cart-quantity">0</span></p>
-            </div>
-            <form id="checkout-form">
-              <input type="email" id="email-input" placeholder="Ingrese su correo electrónico" required>
-              <button type="submit">Finalizar Compra</button>
-            </form>
-        </div>
+       
+    </header>
+
 
         
-    </header>
-    <!-- <main> -->
-        <!-- <section class="productoEnVenta">
-          <h1>Productos</h1>
-          <div class="card">
-            <img src="./img/05.jpg" alt="img">
-            <div class="description">Descripción del producto 1</div>
-            <div class="price">$10.00</div>
-            <div class="buy-button">Comprar</div>
-          </div>
-          <div class="card">
-            <img src="./img/02.jpg" alt="img">
-            <div class="description">Descripción del producto 2</div>
-            <div class="price">$15.00</div>
-            <div class="buy-button">Comprar</div>
-          </div>
-          
-        </section> 
     
-        <div class="cart">
-            <h2>Carrito de Compras</h2>
-            <ul id="cart-items"> -->
-              <!-- Los elementos del carrito se agregarán aquí dinámicamente -->
-            <!-- </ul>
-            <div id="cart-summary">
-              <p>Total: $<span id="cart-total">0</span></p>
-              <p>Cantidad de productos: <span id="cart-quantity">0</span></p>
-            </div>
-            <form id="checkout-form">
-              <input type="email" id="email-input" placeholder="Ingrese su correo electrónico" required>
-              <button type="submit">Finalizar Compra</button>
-            </form>
-          </div> -->
-      <!-- </main> -->
+
     <footer>
         <p>© Derechos Reservados 2023 - Atencion al cliente 0800-555-4343</p>
         <ul>
