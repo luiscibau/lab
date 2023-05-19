@@ -5,15 +5,15 @@
   box-sizing: border-box;
   font-family: 'Poppins',sans-serif;
 }
-header{
-  height: 100vh;
-  width: 100%;
-  background: url("../img/02.jpg") no-repeat;
-  background-position: center;
-  /* margin-top: 60px; */
-}
+
 ::selection{
   background: #a3f5ec;
+}
+
+body {
+  background: url("../img/02.jpg") no-repeat;
+  background-position: center;
+ 
 }
 header nav{
   position: fixed;
@@ -31,18 +31,6 @@ header nav{
   justify-content: space-between;
   
 }
-header nav .logo {
-  height: auto;
-  width: auto;
-  display: flex;
-  align-items: center;
-
-}
-
-
-.logo img{
-display: none;
-}
 
 .logo h1 {
   margin: 0;
@@ -50,7 +38,6 @@ display: none;
   text-align: center;
   color: #ffff;
 }
-
 
 
 nav .menu{
@@ -96,23 +83,28 @@ nav .search-box{
   border-right: 2px solid #2c3350;
   padding: 0 5px 0 0;
 }
+
+
+.main {
+  background-color: rgba(151, 40, 40, 0.8);
+}
 .text-content{
   position: absolute;
   top: 33%;
   left: 7%;
   z-index: 12;
 }
-header .text-content .text{
+.text-content .text{
   font-size: 27px;
   color: #2c3350;
 }
-header .text-content .name{
+.text-content .name{
  color: #2c3350;
  font-size: 75px;
  font-weight: 600;
  margin: -20px 0 0 -3px;
 }
-header .text-content .job{
+.text-content .job{
  color: #2c3350;
  font-size: 40px;
  margin: 5px 0;
@@ -161,14 +153,9 @@ header .text-content .job{
 .buttons button:hover{
   transform: scale(0.97);
 }
-.content .girl img{
-  position: absolute;
-  height: 95%;
-  bottom: 0;
-  right: 80px;
-  position: absolute;
-}
-header .media-icons{
+
+
+.media-icons{
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -453,6 +440,7 @@ footer i {
   font-size: 32px;
   color: #f2f2f2;
 }
+
 
 
 
