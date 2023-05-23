@@ -280,6 +280,8 @@ nav .search-box{
   padding: 10px;
   text-align: center;
   border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
 }
 
 .card img {
@@ -319,6 +321,9 @@ nav .search-box{
   align-items: end;
   margin: 50px 50px;
   text-align: right;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  padding: 80px;
 
 
 }
@@ -396,6 +401,59 @@ footer i {
   color: #f2f2f2;
 }
 
+/*****************/
+/** Formulario  **/
+/*****************/
 
-
-
+.container-formulario {
+    max-width: 400px;
+    margin: auto;
+    margin-top: 150px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  select {
+    height: 36px;
+  }
+  
+  textarea {
+    height: 220px;
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
