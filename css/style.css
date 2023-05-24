@@ -18,9 +18,12 @@ body {
   flex-direction: column;
  
 }
-/* header {
+/* header { test de escrituradfsdfsdf
   height: 80px;
 } */
+main {
+  margin-top: 55px;
+}
 
 header nav{
   position: fixed;
@@ -47,26 +50,26 @@ header nav{
 }
 
 
-nav .menu{
+.menu{
   display: flex;
 }
-nav .menu li{
+.menu li{
   list-style: none;
   margin: 0 10px;
 }
-nav .menu a{
+.menu a{
   color: #ffff;
-  font-size: 17px;
+  font-size: 12px;
   font-weight: 500;
   text-decoration: none;
 }
-nav .menu a:hover{
+.menu a:hover{
   color: #000;
 }
-nav .search-box{
+.search-box{
   position: relative;
-  height: 40px;
-  width: 250px;
+  height: 35px;
+  width: 170px;
 }
 .search-box input[type="text"]{
   position: absolute;
@@ -160,41 +163,55 @@ nav .search-box{
   transform: scale(0.87);
 }
 
-
+/*****************************************/
 /* Estilos para la sección Quienes Somos */
-
+/*****************************************/
 
 .con_somos {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 170px;
-   background-color: rgba(218, 194, 194, 0.8);
+  padding: auto;
+  background-color: rgba(218, 194, 194, 1.8);
+  margin: 10px 50px;
+  border-radius: 15px;
 }
 
 .description {
   flex: 1;
-  margin-right: 20px;
+  margin: 0 50px ;
+  text-align: justify;
 }
+
+
 
 .mapa_somos {
   flex: 1;
+  padding: 25px;
+
 }
 
 /* Estilos para el texto de descripción */
 .description h2 {
-  font-size: 24px;
-  color: #333;
-  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  color: #352b2b;
+  background-color: #ffffff;
+  margin: 10px 0;
+  border-radius: 10px;
 }
 
 .description p {
-  font-size: 16px;
+  font-size: 12px;
   color: #000000;
 }
-
+/*****************************************/
 /* Estilos para el mapa de Google */
+/*****************************************/
+
+
 .mapa_somo iframe {
   width: 100%;
   height: 400px;
@@ -213,9 +230,9 @@ nav .search-box{
 .answer {
   margin-bottom: 20px; 
 }
-
-/* Carousel */
-
+/*****************************************/
+/*                Carousel                 */
+/*****************************************/
 
 .slider {
   position: relative;
@@ -223,7 +240,7 @@ nav .search-box{
   max-width: 100vw;
   height: 250px;
   overflow: hidden;
-  margin-top: 60px;
+  
   
 }
 
@@ -241,9 +258,9 @@ nav .search-box{
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 24px;
+  font-size: 15px;
   color: #000;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.3);
   padding: 10px;
   cursor: pointer;
   z-index: 1; /* Agregado: para asegurar que las flechas estén siempre visibles */
@@ -270,7 +287,7 @@ nav .search-box{
   flex-direction: row;
   justify-content: center; 
   align-items: flex-start;
-  margin: 50px auto;
+  margin: 30px auto;
 }
 
 
@@ -330,6 +347,7 @@ nav .search-box{
 
 .cart {
   margin: 0;
+  
 
 }
 
@@ -338,6 +356,7 @@ nav .search-box{
   justify-content: space-between;
   align-items: center;
   margin-bottom: 50px;
+  text-align: left;
 }
 
 .remove-button {
