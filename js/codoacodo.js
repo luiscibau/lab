@@ -125,3 +125,5 @@ checkoutForm.addEventListener('submit', function (event) {
   emailInput.value = '';
   updateCartSummary();
 });
+
+

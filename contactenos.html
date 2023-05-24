@@ -26,57 +26,50 @@
                     <li><a href="contactenos.html">Contactenos</a></li>
                 </ul>
                 <div class="search-box">
-                    <input type="text" placeholder="Search here...">
+                    <input type="text" placeholder="Buscar...">
                     <a href="#"><i class="fas fa-search"></i></a>
                 </div>
             </div>
         </nav>
     </header>
-
-    <div class="container-formulario">
-        <h2>Formulario de Contacto</h2>
-        <form action="https://formspree.io/f/mgeblknd" method="POST">
-          <label for="nombre">Nombre:</label>
-          <input type="text" id="nombre" name="nombre" required>
-          
-          <label for="email">Email de Contacto:</label>
-          <input type="email" id="email" name="_replyto" required>
-          
-          <label for="pais">País:</label>
-          <select id="pais" name="pais">
-            <option value="Argentina">Argentina</option>
-            <option value="Brasil">Brasil</option>
-            <option value="Chile">Chile</option>
-            <option value="Paraguay">Paraguay</option>
-            <option value="Colombia">Colombia</option>
-            <option value="Uruguay">Uruguay</option>
-            <!-- Agrega más opciones de países según tus necesidades -->
-          </select>
-          
-          <label for="consulta">Tipo de Consulta:</label>
-          <select id="consulta" name="consulta">
-            <option value="Reclamos">Reclamos</option>
-            <option value="Pedido en Proceso">Pedido en Proceso</option>
-            <option value="Atención al Cliente">Atención al Cliente</option>
-            <!-- Agrega más opciones según tus necesidades -->
-          </select>
-          
-          <label for="comentarios">Comentarios:</label>
-          <textarea id="comentarios" name="comentarios"></textarea>
-          
-          <input type="hidden" name="_subject" value="Nuevo mensaje del formulario de contacto">
-          
-          <input type="submit" value="Enviar">
-        </form>
-      </div>
-
-    
-       
-   
-
-
-        
-    
+    <main>
+        <div class="container-formulario">
+            <h2>Formulario de Contacto</h2>
+            <form id="myForm" action="https://formspree.io/f/mgeblknd" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="email">Email de Contacto:</label>
+            <input type="email" id="email" name="_replyto" required>
+            
+            <label for="pais">País:</label>
+            <select id="pais" name="pais">
+                <option value="Argentina">Argentina</option>
+                <option value="Brasil">Brasil</option>
+                <option value="Chile">Chile</option>
+                <option value="Paraguay">Paraguay</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Uruguay">Uruguay</option>
+                <!-- Agrega más opciones de países según tus necesidades -->
+            </select>
+            
+            <label for="consulta">Tipo de Consulta:</label>
+            <select id="consulta" name="consulta">
+                <option value="Reclamos">Reclamos</option>
+                <option value="Pedido en Proceso">Pedido en Proceso</option>
+                <option value="Atención al Cliente">Atención al Cliente</option>
+                <!-- Agrega más opciones según tus necesidades -->
+            </select>
+            
+            <label for="comentarios">Comentarios:</label>
+            <textarea id="comentarios" name="comentarios"></textarea>
+            
+            <input type="hidden" name="_subject" value="Nuevo mensaje del formulario de contacto">
+            
+            <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </main>
 
     <footer>
         <p>© Derechos Reservados 2023 - Atencion al cliente 0800-555-4343</p>
