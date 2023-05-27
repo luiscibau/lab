@@ -118,7 +118,7 @@ main {
   position: fixed;
   top: 33%;
   left: 7%;
-  z-index: 12;
+  /* z-index: 12; */
 }
 .text{
   font-size: 27px;
@@ -313,7 +313,7 @@ main {
   flex-direction: column;
   justify-content: center; 
   align-items: center
-  margin: 0 auto;
+ 
 }
 
 .grupo-cards {
@@ -520,9 +520,7 @@ input[type="submit"]:hover {
 
 @media only screen and (max-width: 768px) {
   /* Header */
-  /* body {
-    overflow: hidden;
-  } */
+ 
   
   .abrir-menu {
     width: auto;
