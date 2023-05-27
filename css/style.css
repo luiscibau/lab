@@ -21,7 +21,7 @@ body {
 
 header{
 
-  position: sticky;
+  position: absolute;
   display: flex;
   /* flex-direction: row; */
   justify-content: center;
@@ -34,7 +34,7 @@ header{
 }
 
 main {
-  margin-top: 55px;
+  margin-top: 4.2rem;
 }
 
 .nav{
@@ -310,10 +310,16 @@ main {
 
 .productoEnVenta {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center; 
-  align-items: flex-start;
-  margin: 30px auto;
+  align-items: center
+  margin: 0 auto;
+}
+
+.grupo-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 
@@ -514,6 +520,10 @@ input[type="submit"]:hover {
 
 @media only screen and (max-width: 768px) {
   /* Header */
+  body {
+    overflow: hidden;
+  }
+  
   .abrir-menu {
     width: auto;
     margin: 10px 0 10px auto;
@@ -524,16 +534,12 @@ input[type="submit"]:hover {
     font-size: 1.85rem;
     background-color: transparent;
     cursor: pointer;
-    
-   
   }
   
 
   .logo h1 {
   font-size: 14px;
   margin-bottom: 10px;
-  
-
   }
 
   /* .abrir-menu, */
@@ -597,7 +603,7 @@ input[type="submit"]:hover {
   font-size: 14px;
   }
   main {
-    margin-top: 20px;
+    margin: 4rem;
   }
   .con_somos {
     flex-direction: column;
@@ -640,9 +646,15 @@ input[type="submit"]:hover {
   }
   
   /* Footer */
+  
+  
   footer p {
   font-size: 10px;
   }
+
+  .grupo-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
-
-
