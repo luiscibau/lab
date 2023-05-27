@@ -19,22 +19,34 @@ body {
  
 }
 
+header{
+
+  position: sticky;
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: center;
+  width: 100%;
+  height: 4rem;
+  left: 0;
+  top: 0;
+  background-color: rgba(65, 53, 67);
+
+}
+
 main {
   margin-top: 55px;
 }
 
-header nav{
+.nav{
   position: fixed;
   width: 100%;
   left: 0;
   top: 0;
   z-index: 12;
   background-color: rgba(65, 53, 67);
-}
-.navbar{
-  width: 90%;
   display: flex;
-  margin: 10px auto;
+  margin: 0 auto;
+  padding: 1rem;
   align-items: center;
   justify-content: space-between;
   
@@ -48,22 +60,29 @@ header nav{
 }
 
 
-.menu{
+.menu-list{
   display: flex;
 }
-.menu li{
+.menu-list li{
   list-style: none;
   margin: 0 10px;
 }
-.menu a{
+.menu-list a{
   color: #ffff;
   font-size: 12px;
   font-weight: 500;
   text-decoration: none;
 }
-.menu a:hover{
+.menu-list a:hover{
   color: #000;
 }
+
+.abrir-menu,
+.cerrar-menu {
+  display: none;
+}
+
+
 .search-box{
   position: relative;
   height: 35px;
@@ -99,7 +118,7 @@ header nav{
   position: fixed;
   top: 33%;
   left: 7%;
-  /* z-index: 12; */
+  z-index: 12;
 }
 .text{
   font-size: 27px;
@@ -196,8 +215,10 @@ header nav{
   border: 0;
 }
 
-
+/*****************************************/
 /* Estilos para el texto de descripción */
+/*****************************************/
+
 .description h2 {
   display: flex;
   flex-direction: row;
@@ -487,37 +508,85 @@ input[type="submit"]:hover {
   transform: scale(0.87);
 }
 
-@media screen and (max-width: 768px) {
-  .container-formulario {
-    max-width: 100%;
-    padding: 20px;
-  }
-}
+/*****************/
+/** Responsive  **/
+/*****************/
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
   /* Header */
-  .navbar {
-  width: 90%;
-  margin: 10px auto;
-  flex-direction: column;
-  align-items: center;
+  .abrir-menu {
+    width: auto;
+    margin: 10px 0 10px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    border: 0;
+    font-size: 1.85rem;
+    background-color: transparent;
+    cursor: pointer;
+    
+   
   }
   
+
   .logo h1 {
   font-size: 14px;
   margin-bottom: 10px;
+  
+
+  }
+
+  /* .abrir-menu, */
+  .cerrar-menu {
+    display: block;
+    border: 0;
+    font-size: 1.85rem;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 0%;
+    padding: 0%;
   }
   
-  .menu {
-  margin-bottom: 10px;
+
+   
+  .nav {
+    opacity: 0;
+    visibility: hidden;
+    width: 100%;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 2rem;
+    /* position: absolute; */
+    top: 0;
+    right: 0;
+    background-color:rgba(65, 53, 67);
+   
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .8);
   }
-  
-  .menu li {
+
+  .nav.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .menu-list {
+    flex-direction: column;
+    align-items: end;
+  }
+
+
+
+
+  .menu-list li {
   margin: 0 5px;
   }
   
-  .menu a {
-  font-size: 10px;
+  .menu-list a {
+  font-size: 14px;
+  color: #ccc;
   }
   
   .search-box {
@@ -528,7 +597,7 @@ input[type="submit"]:hover {
   font-size: 14px;
   }
   main {
-    margin-top: 80px;
+    margin-top: 20px;
   }
   .con_somos {
     flex-direction: column;
@@ -545,7 +614,7 @@ input[type="submit"]:hover {
   .mapa_somos iframe {
     height: 250px;
   }
-}
+
 
   /* Main */
   .text-content {
@@ -564,12 +633,16 @@ input[type="submit"]:hover {
   .job {
   font-size: 25px;
   }
+
+  .container-formulario {
+    max-width: 100%;
+    padding: 20px;
+  }
   
   /* Footer */
   footer p {
   font-size: 10px;
   }
-  }
-
+}
 
 

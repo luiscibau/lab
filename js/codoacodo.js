@@ -1,17 +1,17 @@
-// document.getElementById("icon_menu").addEventListener("click", mostrar_menu);
-
-// function mostrar_menu(){
-
-//     document.querySelector(".menu").classList.toggle("mostrar_menu");
-// }
-/****************************** */
-
-///data para el carousel ////
-
-/****************************** */
-
 
 document.addEventListener("DOMContentLoaded", () => {
+    const nav = document.querySelector("#nav");
+    const abrir = document.querySelector("#abrir");
+    const cerrar = document.querySelector("#cerrar");
+     
+    abrir.addEventListener("click", () =>{
+      nav.classList.add("visible");
+    })
+
+    cerrar.addEventListener("click", () =>{
+      nav.classList.remove("visible");
+    })
+
     const carousel0 = document.querySelector(".carousel0");
     const slides = Array.from(carousel0.children);
     const prevButton = document.getElementById("prevButton");

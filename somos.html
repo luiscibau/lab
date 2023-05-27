@@ -1,47 +1,54 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="UTF-8">
-    <title> Natural Labs - La Ciencia en tu piel </title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <script src="https://kit.fontawesome.com/36f93449df.js" crossorigin="anonymous"></script>
-  </head>
-  <body>
-    <header>
-      <nav>
-          <div class="navbar">
-              <div class="logo">
-                  <h1> Natural Labs</h1>
-                  <!-- <img src="images/logo.png" alt=""> -->
-              </div>
-              <ul class="menu">
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="productos.html">Productos</a></li>
-                  <li><a href="somos.html">Quienes Somos</a></li>
-                  <li><a href="faq.html">Faq</a></li>
-                  <li><a href="contactenos.html">Contactenos</a></li>
-              </ul>
-              <div class="search-box">
-                  <input type="text" placeholder="Buscar...">
-                  <a href="#"><i class="fas fa-search"></i></a>
-              </div>
-          </div>
-      </nav>
-  </header>
-    <main>
-      <div class="con_somos">
-        <div class="description">
-          <h2>Quienes Somos</h2>
-          <p>Nuestra pasión por la salud de la piel y el compromiso con la excelencia nos impulsan a seguir innovando y desafiando los límites de lo posible. Como líderes en el campo, estamos decididos a hacer una diferencia positiva en la vida de las personas, brindándoles soluciones de vanguardia que mejoren su bienestar y confianza.</p>
-        </div>
-        <div class="mapa_somos">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.841003613777!2d-58.36984308443809!3d-34.60564176569068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca4c73d98aebe9b051!2sBalcarce%20150%2C%20C1064AAD%20CABA!5e0!3m2!1sen!2sar!4v1624955408191!5m2!1sen!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
+
+<head>
+  <meta charset="UTF-8">
+  <title> Natural Labs - La Ciencia en tu piel </title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script src="./js/codoacodo.js"></script>
+  <script src="https://kit.fontawesome.com/36f93449df.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header> 
+    <button id="abrir" class="abrir-menu"><i class='bx bx-menu'></i></button>
+    <nav class="nav" id="nav">
+      <div class="logo">
+        <h1> Natural Labs</h1>
       </div>
-    </main>
+      <button id="cerrar" class="cerrar-menu"><i class='bx bx-x' ></i></button>
+      <ul class="menu-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="somos.html">Quienes Somos</a></li>
+        <li><a href="faq.html">Faq</a></li>
+        <li><a href="contactenos.html">Contactenos</a></li>
+      </ul>
+      <div class="search-box">
+        <input type="text" placeholder="Buscar...">
+        <a href="#"><i class="fas fa-search"></i></a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="con_somos">
+      <div class="description">
+        <h2>Quienes Somos</h2>
+        <p>Nuestra pasión por la salud de la piel y el compromiso con la excelencia nos impulsan a seguir innovando y
+          desafiando los límites de lo posible. Como líderes en el campo, estamos decididos a hacer una diferencia
+          positiva en la vida de las personas, brindándoles soluciones de vanguardia que mejoren su bienestar y
+          confianza.</p>
+      </div>
+      <div class="mapa_somos">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.841003613777!2d-58.36984308443809!3d-34.60564176569068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca4c73d98aebe9b051!2sBalcarce%20150%2C%20C1064AAD%20CABA!5e0!3m2!1sen!2sar!4v1624955408191!5m2!1sen!2sar"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </main>
   <footer>
     <p>© Derechos Reservados 2023 - Atención al cliente 0800-555-4343</p>
     <ul>
@@ -76,5 +83,5 @@
     })(document, window, 'Chatra');
   </script>
 </body>
-</html>
 
+</html>
