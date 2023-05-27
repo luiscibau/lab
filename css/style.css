@@ -520,9 +520,9 @@ input[type="submit"]:hover {
 
 @media only screen and (max-width: 768px) {
   /* Header */
-  body {
+  /* body {
     overflow: hidden;
-  }
+  } */
   
   .abrir-menu {
     width: auto;
