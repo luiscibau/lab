@@ -249,12 +249,19 @@ main {
 
 .faq {
   font-weight: bold;
-  color: #3366cc;
+  color: #094cd0;
   margin-bottom: 10px;
+  padding-top: 1rem;
+  background-color: #ffffff;
 }
 
 .answer {
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
+  margin: 2rem;
+  color: #2c3350;
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 2rem 2rem;
 }
 /*****************************************/
 /*                Carousel                 */
@@ -303,9 +310,9 @@ main {
 
 
 
-
-/* Estilos para la sección de productos */
-
+/**********************************/
+/* ********* productos*************/
+/**********************************/
 
 
 .productoEnVenta {
@@ -412,8 +419,9 @@ main {
   background-color: #35d65d;
 }
 
-
-/* Footer */
+/*****************/
+/* ***Footer *****/
+/*****************/
 
 footer {
   background-color: rgb(65, 53, 67);
@@ -605,6 +613,8 @@ input[type="submit"]:hover {
   }
   .con_somos {
     flex-direction: column;
+    max-width: 450px;
+    margin: 0 auto;;
   }
 
   .description {
@@ -612,6 +622,7 @@ input[type="submit"]:hover {
   }
 
   .mapa_somos {
+   
     padding: 25px 0;
   }
 
@@ -650,9 +661,36 @@ input[type="submit"]:hover {
   font-size: 10px;
   }
 
-  .grupo-cards {
+  /* .grupo-cards {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+  } */
+
+
+  /* Estilos para pantallas móviles */
+
+  .grupo-cards {
+    flex-wrap: wrap;
   }
+  
+  .card {
+    width: calc(50% - 20px); /* Tamaño para agrupar de a dos */
+  }
+}
+
+/* Estilos para el carrito de compras en pantallas móviles */
+@media (max-width: 767px) {
+  .cart-container {
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  .cart-item {
+    flex-direction: column;
+  }
+}
+
+
+
 }
