@@ -269,12 +269,11 @@ main {
 
 .slider {
   position: relative;
-  width: 100vw;
-  max-width: 100vw;
-  height: 250px;
+  width: auto;
+  max-width: 100%;
+  height: 170px;
+  max-height: 170px;
   overflow: hidden;
-  
-  
 }
 
 .carousel0 {
@@ -283,8 +282,9 @@ main {
 }
 
 .carousel0 img {
-  width: 100vw;
-  height: 25%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .fa-solid {
@@ -296,9 +296,8 @@ main {
   background-color: rgba(255, 255, 255, 0.3);
   padding: 10px;
   cursor: pointer;
-  z-index: 1; /* Agregado: para asegurar que las flechas estén siempre visibles */
+  z-index: 1; 
 }
-
 
 #prevButton {
   left: 10px;
@@ -307,7 +306,6 @@ main {
 #nextButton {
   right: 10px;
 }
-
 
 
 /**********************************/
@@ -527,9 +525,7 @@ input[type="submit"]:hover {
 /*****************/
 
 @media only screen and (max-width: 768px) {
-  /* Header */
- 
-  
+    
   .abrir-menu {
     width: auto;
     margin: 10px 0 10px auto;
@@ -544,8 +540,13 @@ input[type="submit"]:hover {
   
 
   .logo h1 {
+    position: absolute;
+    margin-right: 4rem;
+  color: #ffffff;
   font-size: 14px;
-  margin-bottom: 10px;
+  margin-top: 20px;
+  /* margin-bottom: 10px; */
+  
   }
 
   /* .abrir-menu, */
@@ -590,8 +591,6 @@ input[type="submit"]:hover {
   }
 
 
-
-
   .menu-list li {
   margin: 0 5px;
   }
@@ -608,13 +607,11 @@ input[type="submit"]:hover {
   .search-box input[type="text"] {
   font-size: 14px;
   }
-  main {
-    margin: 4rem;
-  }
+
   .con_somos {
     flex-direction: column;
     max-width: 450px;
-    margin: 0 auto;;
+    margin: 2rem auto;
   }
 
   .description {
@@ -632,6 +629,14 @@ input[type="submit"]:hover {
 
 
   /* Main */
+
+  main {
+    margin: 4rem;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+
   .text-content {
   top: 20%;
   left: 5%;
@@ -661,14 +666,6 @@ input[type="submit"]:hover {
   font-size: 10px;
   }
 
-  /* .grupo-cards {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  } */
-
-
-  /* Estilos para pantallas móviles */
 
   .grupo-cards {
     flex-wrap: wrap;
@@ -677,10 +674,7 @@ input[type="submit"]:hover {
   .card {
     width: calc(50% - 20px); /* Tamaño para agrupar de a dos */
   }
-}
 
-/* Estilos para el carrito de compras en pantallas móviles */
-@media (max-width: 767px) {
   .cart-container {
     margin: 20px;
     padding: 20px;
@@ -689,8 +683,28 @@ input[type="submit"]:hover {
   .cart-item {
     flex-direction: column;
   }
+
+    /* slider*/
+
+  .slider {
+    height: 150px; /* Ajusta la altura según tus necesidades */
+    max-height: none; /* Elimina la limitación máxima de altura en dispositivos móviles */
+    width: auto;
+    max-width: 100%;
+  }
+
+  .carousel0 img {
+    height: auto; /* Ajusta el alto de las imágenes en dispositivos móviles según su contenido */
+  }
+
+  .fa-solid {
+    font-size: 12px;
+    padding: 8px;
+  }
 }
 
 
 
-}
+
+
+
