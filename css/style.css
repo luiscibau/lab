@@ -536,20 +536,29 @@ input[type="submit"]:hover {
     font-size: 1.85rem;
     background-color: transparent;
     cursor: pointer;
+    /* margin-left: auto; Agrega esta propiedad para alinear a la derecha */
+    margin-right: 0; /* Agrega esta propiedad para eliminar el margen derecho */
   }
-  
+  }
+
+  header {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+  }
+
+  .logo {
+    margin: 1.5rem 1rem;
+  }
 
   .logo h1 {
-    position: absolute;
-    margin-right: 4rem;
-  color: #ffffff;
-  font-size: 14px;
-  margin-top: 20px;
-  /* margin-bottom: 10px; */
-  
+    color: #ffffff;
+    font-size: 14px;
+    margin-bottom: 10px;
+    align-self: flex-start; 
   }
-
-  /* .abrir-menu, */
+  
   .cerrar-menu {
     display: block;
     border: 0;
@@ -571,7 +580,7 @@ input[type="submit"]:hover {
     flex-direction: column;
     align-items: flex-end;
     justify-content: flex-end;
-    gap: 2rem;
+    gap: 0.5rem;
     /* position: absolute; */
     top: 0;
     right: 0;
