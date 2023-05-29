@@ -250,10 +250,33 @@ main {
 .faq {
   font-weight: bold;
   color: #094cd0;
-  margin-bottom: 10px;
+  margin-bottom: 0.5rem;
   padding-top: 1rem;
   background-color: #ffffff;
 }
+.faq h1 {
+  margin: 5px 10px;
+  padding-left: 15px;
+}
+
+.question {
+  margin-bottom: 20px;
+  margin: 2rem;
+  color: #2c3350;
+  background-color: #878517ab;
+  border-radius: 5px;
+  margin: 2rem 2rem;
+  padding: 2rem;
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+  }
+
+ 
+  .question:hover{
+    -webkit-box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+    box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+  }
+
 
 .answer {
   margin-bottom: 20px;
@@ -262,6 +285,10 @@ main {
   background-color: #fff;
   border-radius: 5px;
   margin: 2rem 2rem;
+  padding: 2rem;
+  -webkit-box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+  box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+  }
 }
 /*****************************************/
 /*                Carousel                 */
