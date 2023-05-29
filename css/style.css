@@ -283,10 +283,16 @@ main {
   border-radius: 5px;
   margin: 2rem 2rem;
   padding: 2rem;
-  -webkit-box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
-  box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
   
 }
+
+.answer:hover{
+  -webkit-box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+  box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+}
+
 /*****************************************/
 /*                Carousel                 */
 /*****************************************/
@@ -628,6 +634,7 @@ input[type="submit"]:hover {
 
   .menu-list li {
   margin: 0 5px;
+  padding: 2rem;
   }
   
   .menu-list a {
