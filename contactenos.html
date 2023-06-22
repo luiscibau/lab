@@ -41,10 +41,10 @@
             <h2>Formulario de Contacto <i class='bx bxs-color'></i></i></h2>
             <form id="myForm" action="https://formspree.io/f/mgeblknd" method="POST">
             <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
+            <input type="text" id="nombre" name="nombre"> <!-- Profe; aca realice la modificacion sin required -->
             
             <label for="email">Email de Contacto:</label>
-            <input type="email" id="email" name="_replyto" required>
+            <input id="email" name="_replyto"> <!-- Profe; aca realice la modificacion sin required -->
             
             <label for="pais">País:</label>
             <select id="pais" name="pais">
@@ -54,7 +54,6 @@
                 <option value="Paraguay">Paraguay</option>
                 <option value="Colombia">Colombia</option>
                 <option value="Uruguay">Uruguay</option>
-                <!-- Agrega más opciones de países según tus necesidades -->
             </select>
             
             <label for="consulta">Tipo de Consulta:</label>
@@ -62,7 +61,6 @@
                 <option value="Reclamos">Reclamos</option>
                 <option value="Pedido en Proceso">Pedido en Proceso</option>
                 <option value="Atención al Cliente">Atención al Cliente</option>
-                <!-- Agrega más opciones según tus necesidades -->
             </select>
             
             <label for="comentarios">Comentarios:</label>
@@ -73,6 +71,29 @@
             <input type="submit" value="Enviar">
             </form>
         </div>
+
+         <!-- Profe; aca realice la modificacion  de la validacion la haga por medio de JS  -->
+
+        <script>
+            
+            const form = document.getElementById('myForm');
+            form.addEventListener('submit', function(event) {
+              event.preventDefault();
+
+            const email = document.getElementById('email');
+            const nombre = document.getElementById('nombre');
+            const comentarios = document.getElementById('comentarios');
+            var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+            if(!email.value.match(mailformat)) alert("por Favor ingresa un Email Valido");
+            if (nombre.value == '') alert("Por favor Ingrese su nombre");
+            if (comentarios.value == '') alert("Agregue algun comentario");
+
+
+
+              form.submit();
+             });
+          </script>
     </main>
 
     <footer>
