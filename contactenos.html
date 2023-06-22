@@ -78,20 +78,27 @@
             
             const form = document.getElementById('myForm');
             form.addEventListener('submit', function(event) {
-              event.preventDefault();
+                event.preventDefault();
+                var flag=true;
+                const email = document.getElementById('email');
+                const nombre = document.getElementById('nombre');
+                const comentarios = document.getElementById('comentarios');
+                var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
-            const email = document.getElementById('email');
-            const nombre = document.getElementById('nombre');
-            const comentarios = document.getElementById('comentarios');
-            var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+                if(!email.value.match(mailformat)) {
+                    flag=false;
+                    alert("por Favor ingresa un Email Valido");
+                }
+                if (nombre.value == '') {
+                    flag=false;
+                    alert("Por favor Ingrese su nombre");
+                }
+                if (comentarios.value == '') {
+                    flag=false;
+                    alert("Agregue algun comentario");}
+                    
+                if (flag==true) form.submit();
 
-            if(!email.value.match(mailformat)) alert("por Favor ingresa un Email Valido");
-            if (nombre.value == '') alert("Por favor Ingrese su nombre");
-            if (comentarios.value == '') alert("Agregue algun comentario");
-
-
-
-              form.submit();
              });
           </script>
     </main>
